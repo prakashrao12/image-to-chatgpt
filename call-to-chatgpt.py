@@ -1,5 +1,5 @@
-import json
 import os
+import json
 import boto3
 import http.client
 import urllib.parse
@@ -43,7 +43,7 @@ def lambda_handler(event, context):
     completion_text = response_data['choices'][0]['text']
     
     # Print generated text
-    print(completion_text)
+    #print(completion_text)
     
     # Define the output bucket and output key (file name)
     output_bucket = os.environ['output_bucket_name']
