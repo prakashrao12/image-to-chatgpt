@@ -45,7 +45,7 @@ def lambda_handler(event, context):
         detectedText = getTextractData(bucket, key)
         writeTextractToS3File(detectedText, os.environ['processed_data_bucket_name'], key)
         
-        return 'Processing Done!'
+        return 'Text extraction completed!'
 
     except Exception as e:
         print(e)
