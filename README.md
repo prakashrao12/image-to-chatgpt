@@ -8,7 +8,7 @@
 
 
 ## Summary
-A user will upload a specific image which has specific question in it, AWS lambda will call Textract to extract text from it and calls chatGPT to get a response to that specific question
+The workflow starts where user uploads images to an AWS S3 bucket, where AWS Lambda is triggered to process the image using Amazon Textract. Textract extracts text from the images with high accuracy and then forwards it to ChatGPT. ChatGPT, being an advanced language model, analyzes the extracted text and generates a thoughtful response based on the provided context.
 
 ## Topology
 
